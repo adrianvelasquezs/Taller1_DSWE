@@ -6,56 +6,130 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
           rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
           crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 </head>
 <body>
-
-<div class="container text-center">
-
+<div class="container-fluid text-left p-1">
     <!-- Espacio entre los elementos utilizando gutter -->
     <div class="gutter" style="height: 10px;"></div>
-
     <!-- Row 1: Header of the web page-->
     <div class="row">
-
-        <!-- Col 1.1 -->
+        <!-- Col 1.1: name -->
         <div class="col">
-            <h3 style="text-align: left">Adrian Velasquez</h3>
+            <h1 style="text-align: left">Adrian Velasquez</h1>
+            <div class="gutter" style="height: 5px;"></div>
         </div>
-
-        <!-- Col 1.2 -->
-        <div class="col">
-            <h3 style="text-align: right">Search</h3>
+        <!-- Col 1.2: buttons -->
+        <div class="col text-end">
+            <button type="button" class="btn btn-secondary me-1">Ver más</button>
+            <button type="button" class="btn btn-secondary me-1">Playa</button>
+            <button type="button" class="btn btn-secondary me-1">Personas</button>
+            <button type="button" class="btn btn-secondary me-1">Actividades</button>
         </div>
-
+        <div class="gutter" style="width: 15px"></div>
     </div>
-
     <hr> <!-- Horizontal line -->
-
     <!-- Espacio entre los elementos utilizando gutter -->
     <div class="gutter" style="height: 20px;"></div>
-
     <!-- Row 2: body of the web page -->
     <div class="row">
-
-        <!-- Col 2.1 -->
-        <div class="col">
-            <img src="https://plus.unsplash.com/premium_photo-1669748157617-a3a83cc8ea23?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                 alt="Foto de una playa en el atardecer" width="300" height="200">
+        <div class="gutter" style="width: 20px;"></div>
+        <!-- Col 2.1: image and text-->
+        <div class="col-8">
+            <!-- Row 2.1.1: image-->
+            <div class="row">
+                <a href="https://plus.unsplash.com/premium_photo-1669748157617-a3a83cc8ea23?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <img class="img-fluid rounded mx-auto d-block"
+                         src="https://plus.unsplash.com/premium_photo-1669748157617-a3a83cc8ea23?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         alt="Foto de una playa en el atardecer" width="500" height="300">
+                </a>
+                <div class="gutter" style="height: 15px;"></div>
+                <h3 style="text-align: center; font-size: 20px;"><u>Imagen de la playa</u></h3>
+            </div>
+            <div class="gutter" style="height: 20px;"></div>
+            <!-- Row 2.1.2: text-->
+            <div class="row">
+                <div class="col border border-success-subtle rounded-3 p-3">
+                    <h2>Lorem ipsum...</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl ipsum, luctus eget
+                        scelerisque nec, vulputate eu libero. Aliquam imperdiet vel libero a sodales. Duis eu nisi
+                        fermentum, convallis sapien sit amet, dapibus augue. Sed lobortis ullamcorper tortor vel
+                        finibus.
+                        Vivamus ac mi consequat, porttitor lorem sit amet, semper purus. Phasellus mi sapien, laoreet
+                        accumsan pretium ac, dictum nec ligula. Phasellus in eros nec dolor aliquet malesuada. Proin eu
+                        libero eu nulla dapibus convallis a eget ipsum. Sed ultrices eros nibh, a ultricies lorem
+                        lacinia
+                        sit amet. In nec dapibus nisi, eu tempus tortor. Cras vitae auctor velit. Ut pulvinar purus in
+                        ornare euismod. Sed risus metus, tincidunt at semper vel, fermentum vel tortor.
+                    </p>
+                    <p>
+                        Praesent eget odio quis libero fringilla laoreet. Quisque massa neque, semper mattis dignissim
+                        et, bibendum bibendum ex. Pellentesque vestibulum iaculis nisl eget auctor. Sed convallis urna
+                        sit amet eros convallis facilisis. Fusce viverra quis tellus a maximus. Vivamus mollis orci mi,
+                        in semper odio molestie a. Fusce tincidunt sagittis diam.
+                    </p>
+                    <p>
+                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras quis
+                        pellentesque risus, a varius purus. Proin ut tempor ex, vitae efficitur felis. Curabitur
+                        ullamcorper ligula ac odio euismod, sed maximus sapien rutrum. Donec commodo purus neque, ac
+                        hendrerit neque mattis non. Sed quis rutrum arcu. Aliquam vel purus et arcu convallis rutrum.
+                        Suspendisse eget dui sed odio bibendum auctor id a nisi.
+                    </p>
+                </div>
+            </div>
         </div>
-
-        <!-- Col 2.2 -->
-        <div class="col">
-            <h3>Lista de personas</h3>
-            <ul>
-                <li>Adrian Velasquez</li>
-                <li>Pepito Perez</li>
-                <li>Juan Rodriguez</li>
-            </ul>
+        <!-- Col 2.2: lista de personas y zona de correo electrónico-->
+        <div class="gutter" style="width: 15px;"></div>
+        <div class="col border border-success-subtle rounded-3 p-3">
+            <!-- Row 2.2.1: list -->
+            <div class="row">
+                <div class="col-10">
+                    <h3>Lista de personas</h3>
+                    <ul>
+                        <li>María Mendez</li>
+                        <li>Pepito Perez</li>
+                        <li>Juan Rodriguez</li>
+                    </ul>
+                </div>
+            </div>
+            <hr> <!-- Horizontal line -->
+            <!-- Row 2.2.2: submit area -->
+            <div class="row">
+                <h3>¡Ponte en contacto!</h3>
+                <div class="gutter" style="height: 10px;"></div>
+                <div class="col-7">
+                    <form>
+                        <div class="form-group" style="text-align: left">
+                            <label for="exampleInputEmail1"><b>Correo electrónico</b></label>
+                            <div class="gutter" style="height: 5px;"></div>
+                            <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
+                                   aria-describedby="emailHelp"
+                                   placeholder="Correo electrónico">
+                        </div>
+                        <div class="gutter" style="height: 10px;"></div>
+                        <div class="form-group" style="text-align: left">
+                            <label for="exampleInputPassword1"><b>Contraseña</b></label>
+                            <div class="gutter" style="height: 5px;"></div>
+                            <input type="password" class="form-control form-control-sm" id="exampleInputPassword1"
+                                   placeholder="Constraseña">
+                        </div>
+                        <div class="gutter" style="height: 10px;"></div>
+                        <div class="form-group form-check" style="text-align: left">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Deseo recibir notificaciones</label>
+                        </div>
+                        <div class="gutter" style="height: 10px;"></div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
-
+        <div class="gutter" style="width: 15px"></div>
     </div>
-
+    <div class="gutter" style="height: 15px;"></div>
 </div>
-
 </body>
 </html>
